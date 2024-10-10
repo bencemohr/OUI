@@ -1,0 +1,37 @@
+:root
+{
+    --background-color: #2E3138;
+    --cream: #EFD9C1;
+    --brown: #60463B;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(/src/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat_Alternates";
+    src: url(/src/fonts/Montserrat_Alternates/MontserratAlternates-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Cinzel_Decorative";
+    src: url(/src/fonts/Cinzel_Decorative/CinzelDecorative-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(/src/fonts/Poppins/Poppins-Regular.ttf);
+}
+
+*
+{
+    box-sizing: content-box;
+}
+
+body
+{
+    min-width: 100vw;
+    min-height: 100vh;
+}
