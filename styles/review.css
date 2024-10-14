@@ -16,6 +16,7 @@ h1{
     text-align: center;
     padding-top: 100px;
     font-family: 'Montserrat_Alternates';
+    color: var(--cream);
 }
 .card{
     width: 342px;
@@ -26,6 +27,7 @@ h1{
     background-color: aqua;
     display: flex;
     padding-left: 10px;
+    flex-shrink: 0;
     padding-right: 10px;
     flex-direction: column;
 
@@ -51,8 +53,8 @@ img{
 #cards{
     display: flex;
     gap: 10px;
-    justify-content: center;
+    overflow-x: scroll;
     flex-direction: row;
-    flex-wrap: nowrap;
-    
+    width: 1118px;
+    margin: 0 auto;
 }
