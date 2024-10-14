@@ -1,0 +1,58 @@
+body{
+    overflow: hidden;
+    background-color: var(--background-color);
+    background-image: url('../src/img/review/Bg.png');
+    background-size: cover;
+
+
+}
+
+nav{
+    width: 100%;
+    height: 92px;
+    background-color: var(--cream);
+}
+h1{
+    text-align: center;
+    padding-top: 100px;
+    font-family: 'Montserrat_Alternates';
+}
+.card{
+    width: 342px;
+    text-align: center;
+    border-radius: 10px;
+    height: 373px;
+    border: 2px solid brown;
+    background-color: aqua;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-direction: column;
+
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.name {
+    margin: 0;
+}
+.who{
+    margin: 0;
+    margin-top: 10px;
+}
+img{
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 60px;
+}
+#cards{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
+}
