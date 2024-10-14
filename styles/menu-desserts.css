@@ -1,0 +1,29 @@
+body
+{
+    background-color: #2E3138;
+}
+
+h1
+{
+    color: #EFD9C1;
+    text-align: center;
+}
+
+.Fresh
+{
+    color: #EFD9C1;
+    grid-column: 1;
+}
+
+.container
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.unfresh
+{
+    grid-column: 2;
+    color: #EFD9C1;
+}
