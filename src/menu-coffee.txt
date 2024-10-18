@@ -1,0 +1,12 @@
+Espresso
+A rich, full-bodied shot of coffee................................................................................................................€2.50
+Café au Lait
+Smooth coffee with steamed milk, served in a large bowl...............................................€3.50
+Cappuccino
+Espresso with steamed milk and a thick layer of frothy milk foam........................€3.80
+Café Crème
+A creamy coffee made with a shot of espresso and hot cream or milk...........€3.70
+Café Macchiato
+A shot of espresso topped with a dollop of frothy milk.......................................................€2.80
+Café Mocha
+Espresso blended with rich chocolate syrup, steamed milk, and whipped cream.......................................................................................................................................................................................€4.20
