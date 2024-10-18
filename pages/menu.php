@@ -7,21 +7,21 @@
     <link rel="stylesheet" href="../style.css" type="text/css">
 </head>
 <body>
-    <div class="Menu">
-        <div>Menu
-            <img src="../src/img/general/Rectangle 1.png" alt="background">
+    <div class="container">
+        <div class="main">
+            <p>MENU</p>
         </div>
         <div class="drinks">
             <div class="coffee">
                 <div class="iconName1">
-                    <p>COFFEE</p>
+                    <h1>COFFEE</h1>
                     <img src="../src/img/general/coffee.svg" alt="coffee">
                 </div>
                 <?php
                     $coffeeFile= fopen("../src/menu-coffee.txt","r");
                     while (! feof($coffeeFile)) {
                         $coffeeLine = fgets($coffeeFile);
-                        echo $coffeeLine. "<br>";
+                        echo "<p>" . $coffeeLine . "</p>";
                     }
                     fclose($coffeeFile);
                 ?>
@@ -35,7 +35,7 @@
                     $cdrinkFile= fopen("../src/menu-cdrink.txt","r");
                     while (! feof($cdrinkFile)) {
                         $cdrinkLine = fgets($cdrinkFile);
-                        echo $cdrinkLine. "<br>";
+                        echo "<p>" . $cdrinkLine . "</p>";
                     }
                     fclose($cdrinkFile);
                 ?>
