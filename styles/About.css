@@ -1,0 +1,46 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    overflow: hidden;
+    background-color: var(--background-color);
+}
+
+h1
+{
+    color: var(--cream);
+}
+
+.text
+{
+    font-family: 'Montserrat_Alternates';
+    color: var(--cream);
+}
+
+.container
+{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px;
+max-width: 900px;
+margin: 50px auto;
+border-radius: 10px;
+}
+
+img
+{
+    width: 250px;
+}
+
+.button
+{
+    width: fit-content;
+    background-color: var(--cream);
+    float: right;
+}

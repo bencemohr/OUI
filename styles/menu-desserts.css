@@ -9,21 +9,28 @@ h1
     text-align: center;
 }
 
-.Fresh
+img
 {
-    color: #EFD9C1;
-    grid-column: 1;
+    width: 35px;
+    vertical-align: middle;
+    background-color: #2E3138;
+    opacity: .5;
 }
 
 .container
 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
+    color: #EFD9C1;
+    justify-content: space-around;
 }
 
-.unfresh
+.containe
+{
+    grid-column: 1;
+}
+
+.contain
 {
     grid-column: 2;
-    color: #EFD9C1;
 }
