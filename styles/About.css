@@ -1,0 +1,40 @@
+body
+{
+    background-color: #2E3138;
+}
+
+h2
+{
+    padding-left: 0%;
+    text-align: center;
+}
+
+.text
+{
+    color: #EFD9C1;
+    grid-column: 1;
+    font-size: 25px;
+}
+
+img
+{
+    grid-column: 2;
+    width: 50%;
+    
+}
+
+.container
+{
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+}
+
+.button
+{
+    grid-column: 2;
+    color: black;
+    background-color: #EFD9C1;
+    width: fit-content;
+    
+}
