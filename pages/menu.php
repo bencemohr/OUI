@@ -18,7 +18,7 @@
                     while(! feof($file))
                     {
                         $line = fgets($file);
-                        echo $line. "<br>";
+                        echo "<p>" .$line. "</p>" ;
                     }
                 ?>
             </div>
@@ -30,7 +30,7 @@
                     while(! feof($file))
                     {
                         $line = fgets($file);
-                        echo $line. "<br>";
+                        echo "<p>" .$line. "</p>" ;
                     }
                 ?>
             </div>
