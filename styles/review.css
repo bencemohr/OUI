@@ -1,5 +1,4 @@
 body{
-    overflow: hidden;
     background-color: var(--background-color);
     background-image: url('../src/img/review/Bg.png');
     background-size: cover;
@@ -149,4 +148,39 @@ img{
      color: #F0E3D0;
      font-size: 16;
      font-family: 'Montserrat', sans-serif;
+}
+/* Bence Mohr */
+
+/* Making a new form tab*/
+
+h2{
+    text-align: center;
+    padding-top: 100px;
+    font-family: 'Montserrat_Alternates';
+    color: var(--cream);
+}
+
+form{
+    display: grid;
+}
+
+#form{
+    margin: auto;
+}
+
+/* Introducing text area for easier display */
+
+input, textarea{
+    padding-top: 1vh;
+    margin-top: 2vh;
+}
+
+/*
+Limiting textarea resize options only to vertical and with min height
+Maybe subject to change
+*/
+
+textarea{
+    resize: vertical;
+    min-height: 15vh;
 }
