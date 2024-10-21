@@ -1,3 +1,60 @@
+<?php
+$error=FALSE;
+if ($_SERVER["REQUEST_METHOD"] == "POST")
+{
+    /* Sanitize incoming data */
+    $name=filter_input(INPUT_POST,"name", FILTER_SANITIZE_SPECIAL_CHARS);
+    $occ=filter_input(INPUT_POST,"occ",FILTER_SANITIZE_SPECIAL_CHARS);
+    $msg=filter_input(INPUT_POST,"msg",FILTER_SANITIZE_SPECIAL_CHARS);
+
+    /* Checking incoming data for error - No message given. If no name is present replace with anonymus */
+    if ($msg!= "")
+    {
+        if ($name=="")
+        {
+            $name="Anonymus";
+            output($name,$occ,$msg);
+        }
+        else
+        {
+            output($name,$occ,$msg);
+        }
+    }
+    else
+    {
+        $error=TRUE;
+    }
+}
+
+/* Echoes the error message to the html */
+function error($error)
+{
+    if ($error)
+    {
+    echo '
+        <div id="error-msg">
+            <h4>Message cannot be empty!</h4>
+        </div>
+        ';
+    }
+}
+
+/* Put the ready data into the CSV file */
+
+function output($name,$occ,$msg)
+{
+    $out=fopen("../src/reviews.csv","a");
+    fputcsv($out,[$name,$occ,$msg]);
+    fclose($out);
+}
+
+
+?>
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,10 +110,12 @@
         <!-- Bence Mohr -->
          <section id="form">
             <h2>Leave a review yourself</h2>
-            <form action="review.html" method="post">
+            <?php error($error) ?>
+            <form action="<?php echo $_SERVER["PHP_SELF"] ?>" method="post">
                 <input type="text" name="name" id="name" placeholder="Your Name">
                 <input type="text" name="occ" id="occ" placeholder="Your Occupation">
                 <textarea name="msg" id="msg" rows="5" cols="40" placeholder="Tell us what you think"></textarea>
+                <input type="submit" value="Submit my review">
                 <!-- Discussion about stars rating and realization -->
             </form>
          </section>

@@ -166,13 +166,16 @@ form{
 
 #form{
     margin: auto;
+    padding-bottom: 5vh;
 }
 
 /* Introducing text area for easier display */
 
 input, textarea{
-    padding-top: 1vh;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
     margin-top: 2vh;
+    padding-left: 0.5vw;
 }
 
 /*
@@ -183,4 +186,15 @@ Maybe subject to change
 textarea{
     resize: vertical;
     min-height: 15vh;
+}
+
+/* Error message styling*/
+
+#error-msg{
+    background-color: lightsalmon;
+    color: tomato;
+    text-align: center;
+    border-radius: 5px;
+    padding-top: 1px;
+    padding-bottom: 1px;
 }
