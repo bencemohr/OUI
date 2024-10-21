@@ -2,6 +2,7 @@ body{
     background-color: var(--background-color);
     background-image: url('../src/img/review/Bg.png');
     background-size: cover;
+    overflow-x: hidden;
 }
 nav{
     width: 100%;

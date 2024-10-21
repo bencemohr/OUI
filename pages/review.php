@@ -47,11 +47,40 @@ function output($name,$occ,$msg)
     fputcsv($out,[$name,$occ,$msg]);
     fclose($out);
 }
-
+class Card{
+    private $name;
+    private $occ;
+    private $msg;
+    private $color;
+    private $stars = 3.5;
+    private $picture_url = '../src/img/review/men-picture.png';
+    function __construct($color, $name, $occ, $msg){
+        $this->color = $color;
+        $this->name = $name;
+        $this->occ = $occ;
+        $this->msg = $msg;
+        echo "<div class='$this->color'>
+                <img src=$this->picture_url alt='logo' class='picture'>
+                <p class='name'>$this->name</p>
+                <p class='who'>$this->occ</p>
+                <div class='stars'>"; $this->get_stars(); echo "</div>" .
+                "<p class='review'>$this->msg</p></div>";
+    }
+    function get_stars(){
+        if (is_float($this->stars)) {
+            for ($i=0; $i < intval($this->stars); $i++) { 
+                echo '<img src="../src/img/review/star-full.svg" alt="full-star">';
+            }
+            echo '<img src="../src/img/review/star-half.svg" alt="half-star">';
+        }else{
+            for ($i=0; $i < $this->stars; $i++) { 
+                echo '<img src="../src/img/review/star-full.svg" alt="full-star">';
+            }
+        }
+    }
+}
 
 ?>
-
-
 
 
 
@@ -71,41 +100,23 @@ function output($name,$occ,$msg)
         <nav></nav>
         <h1>Customer Reviews</h1>
         <section id="cards"> 
-            <div class="card-brown">
-                <img src="../src/img/review/men-picture.png" alt="logo" class="picture">
-                <p class="name">Tyler</p>
-                <p class="who">Student</p>
-                <div class="stars"><img src="../src/img/review/star-full.svg" alt="full-star"><img src="../src/img/review/star-full.svg" alt="full-star"><img src="../src/img/review/star-full.svg" alt="full-star"><img src="../src/img/review/star-full.svg" alt="full-star"><img src="../src/img/review/star-full.svg" alt="full-star"></div>
-                <p class="review">“I love spending my downtime in a cozy coffee shop, surrounded by the sweet aroma of freshly brewed drinks and pastries.”</p>
-            </div>
-            <div class="card-light">
-                <img src="../src/img/review/men-picture.png" alt="logo" class="picture">
-                <p class="name">Tyler</p>
-                <p class="who">Student</p>
-                <div class="stars"><img src="../src/img/review/star-full.svg" alt="full-star"><img src="../src/img/review/star-full.svg" alt="full-star"><img src="../src/img/review/star-full.svg" alt="full-star"><img src="../src/img/review/star-full.svg" alt="full-star"><img src="../src/img/review/star-full.svg" alt="full-star"></div>
-                <p class="review">“I love spending my downtime in a cozy coffee shop, surrounded by the sweet aroma of freshly brewed drinks and pastries.”</p>
-            </div>
-            <div class="card-green">
-                <img src="../src/img/review/men-picture.png" alt="logo" class="picture">
-                <p class="name">Tyler</p>
-                <p class="who">Student</p>
-                <div class="stars"><img src="../src/img/review/star-full.svg" alt="full-star"><img src="../src/img/review/star-full.svg" alt="full-star"><img src="../src/img/review/star-full.svg" alt="full-star"><img src="../src/img/review/star-zero.svg" alt="full-star"><img src="../src/img/review/star-full.svg" alt="full-star"></div>
-                <p class="review">“I love spending my downtime in a cozy coffee shop, surrounded by the sweet aroma of freshly brewed drinks and pastries.”</p>
-            </div>
-            <div class="card-purple">
-                <img src="../src/img/review/men-picture.png" alt="logo" class="picture">
-                <p class="name">Tyler</p>
-                <p class="who">Student</p>
-                 <div class="stars"><img src="../src/img/review/star-full.svg" alt="full-star"><img src="../src/img/review/star-full.svg" alt="full-star"><img src="../src/img/review/star-full.svg" alt="full-star"><img src="../src/img/review/star-full.svg" alt="full-star"><img src="../src/img/review/star-full.svg" alt="full-star"></div>
-                <p class="review">“I love spending my downtime in a cozy coffee shop, surrounded by the sweet aroma of freshly brewed drinks and pastries.”</p>
-            </div>
-            <div class="card-red">
-                <img src="../src/img/review/men-picture.png" alt="logo" class="picture">
-                <p class="name">Tyler</p>
-                <p class="who">Student</p>
-                 <div class="stars"><img src="../src/img/review/star-full.svg" alt="full-star"><img src="../src/img/review/star-full.svg" alt="full-star"><img src="../src/img/review/star-full.svg" alt="full-star"><img src="../src/img/review/star-full.svg" alt="full-star"><img src="../src/img/review/star-full.svg" alt="full-star"></div>
-                <p class="review">“I love spending my downtime in a cozy coffee shop, surrounded by the sweet aroma of freshly brewed drinks and pastries.”</p>
-            </div>
+            <?php
+                $file = fopen("../src/reviews.csv", "r");
+                $colors = ['card-brown', 'card-light', 'card-green', 'card-purple', 'card-red'];
+                $i = 0;
+                while(!feof($file)) {
+                    $line = fgetcsv($file);
+                    $name = $line[0];
+                    $occ = $line[1];
+                    $msg = $line[2];
+                    new Card($colors[$i], $name, $occ, $msg);
+                    if ($i == 4) {
+                        $i = 0;
+                    }
+                    $i++;
+                    } 
+                fclose($file);
+            ?>
         </section>
         <!-- Bence Mohr -->
          <section id="form">
