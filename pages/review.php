@@ -52,7 +52,7 @@ class Card{
     private $occ;
     private $msg;
     private $color;
-    private $stars = 3.5;
+    private $stars = 2.5;
     private $picture_url = '../src/img/review/men-picture.png';
     function __construct($color, $name, $occ, $msg){
         $this->color = $color;
@@ -72,9 +72,15 @@ class Card{
                 echo '<img src="../src/img/review/star-full.svg" alt="full-star">';
             }
             echo '<img src="../src/img/review/star-half.svg" alt="half-star">';
+            for ($i=0; $i < 4 - intval($this->stars); $i++) { 
+                echo '<img src="../src/img/review/star-zero.svg" alt="zero-star">';
+            }
         }else{
             for ($i=0; $i < $this->stars; $i++) { 
                 echo '<img src="../src/img/review/star-full.svg" alt="full-star">';
+            }
+            for ($i=0; $i < 4 - $this->stars; $i++) { 
+                echo '<img src="../src/img/review/star-zero.svg" alt="zero-star">';
             }
         }
     }
