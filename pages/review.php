@@ -44,7 +44,8 @@ function error($error)
 function output($name,$occ,$msg)
 {
     $out=fopen("../src/reviews.csv","a");
-    fputcsv($out,[$name,$occ,$msg]);
+    fwrite($out,"\n");
+    fputcsv($out,[$name,$occ,$msg],",",'"',"","");
     fclose($out);
 }
 class Card{
