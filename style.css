@@ -53,13 +53,17 @@ p{
     width: 100%;
     height: 100vh;
     display: grid;
+    grid-template-rows: 1fr 7fr;
     grid-template-columns: 1fr 1fr;;
-    gap: 10rem;
+    
     padding: 2.5rem;
     line-height: 2;
 }
 
-
+.drinks h1{
+    grid-area: 1/1/2/3;
+    text-align: center;
+}
 .icon{
     display:flex;
     gap: 10px;
@@ -69,6 +73,7 @@ p{
 
 .coffeeItem, .cdrinkItem{
     display: flex;
+    
     flex-direction: column;
-    padding: 2.5rem 10rem;
+    padding: 2.5rem 2.5rem;
 }
