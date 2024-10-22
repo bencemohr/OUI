@@ -5,6 +5,13 @@ body
     padding: 0;
 }
 
+main
+{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    padding-top: 100px;
+}
+
 h2
 {
     padding-left: 0%;
@@ -21,7 +28,8 @@ h2
 img
 {
     grid-column: 2;
-    width: 50%;
+    width: 200px;
+    padding-top: 100px;
     
 }
 
@@ -29,7 +37,11 @@ img
 {
     display: grid; 
     grid-template-columns: 1fr 1fr;
+    gap: .5rem;
     align-content: center;
+    grid-column: 2/3;
+    align-self: center;
+    padding-left: 75px;
 }
 
 
