@@ -1,0 +1,69 @@
+*
+{
+    box-sizing: content-box;
+    
+}
+
+@font-face 
+{
+    font-family: "Montserrat_Alternates";
+    src: url(/src/fonts/Montserrat_Alternates/MontserratAlternates-Regular.ttf);
+}
+
+body
+{
+    
+    background-color: #2E3138;
+    min-width: 100vw;
+    min-height: 100vh;
+   
+}
+
+
+
+.container
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    z-index: -1;
+}
+
+    
+.container1{
+    grid-area: 2/2/4/5;
+    
+
+}
+
+.container3{
+   grid-area: 3/3/4/5;
+   transform: translateX(180px);
+   margin-top: 10%;
+
+}
+
+.container4 {
+    grid-area: 3/4/4/3;
+    transform: translateX(-90px);
+    margin-top: 35%;
+}
+
+.container4 h2 {
+    font-size: 30px;
+    color: #EFD9C1;
+}
+
+.container4 p {
+    color: #EFD9C1;
+    padding: 1rem 1rem 1rem 0;
+    max-width: 70%;
+
+}
+
+
+
+
+
+
+    
