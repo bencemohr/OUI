@@ -8,37 +8,43 @@
 </head>
 <body>
     <div class="container">
-        <div class="main">
-            <p>MENU</p>
+        <div class="menu">
+            <h1>MENU</h1>
         </div>
+        
         <div class="drinks">
+            <h1>DRINKS</h1>
             <div class="coffee">
-                <div class="iconName1">
-                    <h1>COFFEE</h1>
+                <div class="icon">
+                    <h2>COFFEE</h2>
                     <img src="../src/img/general/coffee.svg" alt="coffee">
                 </div>
-                <?php
-                    $coffeeFile= fopen("../src/menu-coffee.txt","r");
-                    while (! feof($coffeeFile)) {
-                        $coffeeLine = fgets($coffeeFile);
-                        echo "<p>" . $coffeeLine . "</p>";
-                    }
-                    fclose($coffeeFile);
-                ?>
+                <div class="coffeeItem">
+                    <?php
+                        $coffeeFile= fopen("../src/menu-coffee.txt","r");
+                        while (! feof($coffeeFile)) {
+                            $coffeeLine = fgets($coffeeFile);
+                            echo "<p>" . $coffeeLine . "</p>";
+                        }
+                        fclose($coffeeFile);
+                    ?>
+                </div>
             </div>   
             <div class="cdrink">
-                <div class="iconName2">
-                    <p>COLD DRINKS & TEA</p>
+                <div class="icon">
+                    <h2>COLD DRINKS & TEA</h2>
                     <img src="../src/img/general/cold drinks.svg" alt="Cold">
                 </div>
-                <?php
-                    $cdrinkFile= fopen("../src/menu-cdrink.txt","r");
-                    while (! feof($cdrinkFile)) {
-                        $cdrinkLine = fgets($cdrinkFile);
-                        echo "<p>" . $cdrinkLine . "</p>";
-                    }
-                    fclose($cdrinkFile);
-                ?>
+                <div class="cdrinkItem">
+                    <?php
+                        $cdrinkFile= fopen("../src/menu-cdrink.txt","r");
+                        while (! feof($cdrinkFile)) {
+                            $cdrinkLine = fgets($cdrinkFile);
+                            echo "<p>" . $cdrinkLine . "</p>";
+                        }
+                        fclose($cdrinkFile);
+                    ?>
+                </div>
             </div>         
         </div>
     </div>
