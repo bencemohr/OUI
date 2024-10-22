@@ -30,11 +30,4 @@ img
     align-content: center;
 }
 
-.button
-{
-    grid-column: 2;
-    color: black;
-    background-color: #EFD9C1;
-    width: fit-content;
-    float: right;
-}
+
