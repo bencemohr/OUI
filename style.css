@@ -2,6 +2,10 @@
     font-family: "Montserrat";
     src: url(./src/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
 }
+@font-face {
+    font-family: "Montserrat_Alternates";
+    src: url(./src/fonts/Montserrat_Alternates/MontserratAlternates-Regular.ttf);
+}
 
 *{
     box-sizing: border-box;
@@ -12,25 +16,52 @@
 }
 
 body{
-    font-family: "Montserrat";
     background-color: #2E3138;
+    font-family: "Montserrat";
     color: #EFD9C1;
+}
+
+header{
+    display: flex;
+    background-color: #EFD9C1;
+    width: 100%;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2.5rem;
+}
+
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+
+header nav ul li a{
+    text-decoration: none;
+    color: #2E3138;
+}
+
+a:hover{
+    text-decoration: underline;
+    text-decoration-color: #2E3138;
 }
 
 .menu{
     display: flex;
-    width: 100%;
-    height: 100vh;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height:90vh;
     background-image: url(./src/img/general/Rectangle\ 1.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top !important;
 }
 
-h1{
-   
+h1{ 
+    font-family: "Montserrat_Alternates";
     font-size: 50px;
 }
 
@@ -47,15 +78,13 @@ p{
     margin-top: 1.5rem;
 }
 
-
-
 .drinks{
     width: 100%;
     height: 100vh;
     display: grid;
-    grid-template-rows: 1fr 7fr;
+    grid-template-rows: 10% 90%;
     grid-template-columns: 1fr 1fr;;
-    
+    row-gap: 2rem;
     padding: 2.5rem;
     line-height: 2;
 }
@@ -63,6 +92,7 @@ p{
 .drinks h1{
     grid-area: 1/1/2/3;
     text-align: center;
+
 }
 .icon{
     display:flex;
@@ -73,7 +103,6 @@ p{
 
 .coffeeItem, .cdrinkItem{
     display: flex;
-    
     flex-direction: column;
     padding: 2.5rem 2.5rem;
 }
