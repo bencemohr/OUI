@@ -57,6 +57,12 @@ main {
     position: absolute;
 }
 
+.container3 {
+    grid-area: 3/1/3/2;
+    font-family: "Montserrat_Alternates", sans-serif;
+    padding: 20%;
+}
+
 .container2 h2 {
     font-family: "Montserrat_Alternates", sans-serif;
     font-size: 28px;
@@ -66,7 +72,7 @@ main {
 }
 
 .container2 p {
-    font-family: "Montserrat_Alternates", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 16px;
     color: #EFD9C1;
     line-height: 1.5;
