@@ -51,16 +51,15 @@
            <p id="message">
            
            <?php
-           $messages = ["We are opened at: 7:00", "We are closed at: 18:00"];
+           $messages = ['We are opened at: 7:00', 'We are closed at: 18:00'];
            echo $messages[0]; 
            ?>
            </p>
 
            <script>
-             // Array to hold the messages (same as the ones generated in PHP)
-             const messages = [
+             const messages= [
              <?php
-               // Output the PHP array to JavaScript
+              
              foreach ($messages as $message) {
              echo "'" . $message . "',";
              }
@@ -69,7 +68,6 @@
 
              let currentIndex = 0;
  
-             
              function updateMessage() {
               
              const messageElement = document.getElementById('message');
@@ -79,7 +77,6 @@
              currentIndex = (currentIndex + 1) % messages.length;
              }
 
-             // Change the message every 2 seconds (2000 milliseconds)
               setInterval(updateMessage, 1500);
             </script>
         </div>
