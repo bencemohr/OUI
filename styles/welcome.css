@@ -12,6 +12,7 @@ body
 {
     width: 100vw;
     background-color: #2E3138;
+    overflow-x: hidden;
 }
 
 p
