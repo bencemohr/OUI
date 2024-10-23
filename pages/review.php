@@ -46,22 +46,32 @@ class Card
     private $occ;
     private $msg;
     private $color;
-    private $stars = 2.5;
-    private $picture_url = '../src/img/review/men-picture.png';
-    function __construct($color, $name, $occ, $msg)
+    private $stars;
+    private $picture_url;
+    function __construct($color, $name, $occ, $msg, $stars=2.5, $picture_url='../src/img/review/men-picture.png')
     {
         $this->color = $color;
         $this->name = $name;
         $this->occ = $occ;
         $this->msg = $msg;
-        echo "<div class='$this->color'>
-                <img src=$this->picture_url alt='logo' class='picture'>
-                <p class='name'>$this->name</p>
-                <p class='who'>$this->occ</p>
-                <div class='stars'>";
-        $this->get_stars();
-        echo "</div>" .
-            "<p class='review'>$this->msg</p></div>";
+        $this->stars = $stars;
+        $this->picture_url = $picture_url;
+        $this->Build();
+    }
+    function Build()
+    {
+        echo "
+            <div class='$this->color'>
+            <img src=$this->picture_url alt='logo' class='picture'>
+            <p class='name'>$this->name</p>
+            <p class='who'>$this->occ</p>
+            <div class='stars'>
+        ";
+            $this->get_stars();
+        echo "
+            </div>
+            <p class='review'>$this->msg</p></div>
+        ";
     }
     function get_stars()
     {
