@@ -270,13 +270,13 @@ body::-webkit-scrollbar-thumb,
   display: inline-block;
   width: 30px;
   height: 30px;
-  background: url("../src/img/review/star-zero.svg") no-repeat center; /* Используем иконку пустой звезды */
+  background: url("../src/img/review/star-zero.svg") no-repeat center; 
   background-size: contain;
 }
 
 .star-rating input:checked ~ label,
 .star-rating label:hover,
 .star-rating input:hover ~ label {
-  background: url("../src/img/review/star-full.svg") no-repeat center; /* Полные звезды при выборе или наведении */
+  background: url("../src/img/review/star-full.svg") no-repeat center; 
   background-size: contain;
 }
