@@ -1,10 +1,10 @@
 @font-face {
     font-family: "Montserrat";
-    src: url(./src/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+    src: url(../src/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
 }
 @font-face {
     font-family: "Montserrat_Alternates";
-    src: url(./src/fonts/Montserrat_Alternates/MontserratAlternates-Regular.ttf);
+    src: url(../src/fonts/Montserrat_Alternates/MontserratAlternates-Regular.ttf);
 }
 
 *{
@@ -54,7 +54,7 @@ a:hover{
     align-items: center;
     width: 100%;
     height:90vh;
-    background-image: url(./src/img/general/Rectangle\ 1.png);
+    background-image: url(../src/img/general/Rectangle\ 1.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top !important;
@@ -80,7 +80,6 @@ p{
 
 .drinks{
     width: 100%;
-    height: 100vh;
     display: grid;
     grid-template-rows: 10% 90%;
     grid-template-columns: 1fr 1fr;;
