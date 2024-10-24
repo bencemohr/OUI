@@ -7,22 +7,22 @@
 
 @font-face {
     font-family: "Montserrat";
-    src: url(/src/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+    src: url(../src/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
 }
 
 @font-face {
     font-family: "Montserrat_Alternates";
-    src: url(/src/fonts/Montserrat_Alternates/MontserratAlternates-Regular.ttf);
+    src: url(../src/fonts/Montserrat_Alternates/MontserratAlternates-Regular.ttf);
 }
 
 @font-face {
     font-family: "Cinzel_Decorative";
-    src: url(/src/fonts/Cinzel_Decorative/CinzelDecorative-Regular.ttf);
+    src: url(../src/fonts/Cinzel_Decorative/CinzelDecorative-Regular.ttf);
 }
 
 @font-face {
     font-family: "Poppins";
-    src: url(/src/fonts/Poppins/Poppins-Regular.ttf);
+    src: url(../src/fonts/Poppins/Poppins-Regular.ttf);
 }
 
 *
