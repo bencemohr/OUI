@@ -139,18 +139,19 @@ class Card
             $file = fopen("../src/reviews.csv", "r");
             $colors = ['card-brown', 'card-light', 'card-green', 'card-purple', 'card-red'];
             $i = 0;
-            if ($i == 5) {
-                $i = 0;
+            while(!feof($file)) {
+                if ($i == 5) {
+                    $i = 0;
+                }
+                $line = fgetcsv($file);
+                $name = $line[0];
+                $occ = $line[1];
+                $msg = $line[2];
+                $stars = $line[3];
+                $gender = $line[4];
+                new Card($colors[$i], $name, $occ, $msg, $stars, $gender);
+                $i++;
             }
-            $line = fgetcsv($file);
-            $name = $line[0];
-            $occ = $line[1];
-            $msg = $line[2];
-            $stars = $line[3];
-            $gender = $line[4];
-            new Card($colors[$i], $name, $occ, $msg, $stars, $gender);
-            $i++;
-
 
             fclose($file);
             ?>
