@@ -25,7 +25,6 @@ body {
 
 main {
     overflow-x: hidden;
-    background-image: url(src/img/general/Vector66.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -50,8 +49,8 @@ main {
 .container2 {
     grid-area: 3/2/4/2;
     position: fixed;
-    bottom: -6rem;    
-    right: 26%;
+    bottom: 7rem;    
+    right: 15px;
     padding: 20px;  
     max-width: 350px;
     color: #EFD9C1;
@@ -116,7 +115,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 5px 2rem;
-    
+    background-color: #EFD9C1;
 }
 
 nav {

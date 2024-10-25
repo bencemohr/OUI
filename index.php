@@ -5,13 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./styles/index.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
   </head>
   <body>
-    <div class="container">
-  
-
-    </div>
-
     <div class="containter-2">
       <div class="Text">
         <h2>Start your <?php echo date("l"); ?> with a cup<Br>
@@ -29,24 +25,7 @@
           <a href="#" class="menu-button">MENU</a>
           
       </div>
-    </div>
-
-   
-    
-   
-  </body>
-</html>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Team IT1F">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OUI</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
-</head>
-<body>
-   
+    </div>   
     <main>
       
       

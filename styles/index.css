@@ -32,7 +32,7 @@ body {
 .Text{
     position: absolute;
     top: 150px; 
-    left: 300px; 
+    left: 200px; 
     color: #60463b;
     font-size: 20px;
     font-weight: bold;
@@ -44,7 +44,7 @@ body {
 .TextParagraph{
     position: absolute;
     top: 230px; 
-    left: 300px; 
+    left: 200px; 
     color: #2E3138;
     font-size: 15px;
     font-weight: bold;
@@ -60,7 +60,7 @@ body {
     position: absolute;
     font-family: Montserrat;
     top: 295px;
-    left: 300px;
+    left: 200px;
     text-decoration: none;
     background-color: #60463B; 
     color: #EFD9C1;
