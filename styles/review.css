@@ -1,0 +1,258 @@
+body {
+  background-color: var(--background-color);
+  background-image: url("../src/img/review/Bg.png");
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 100px;
+  font-family: "Montserrat_Alternates";
+  color: var(--cream);
+
+}
+.stars {
+  display: flex;
+  margin: 0 auto;
+
+  width: 50%;
+}
+.card-brown {
+  width: 342px;
+  text-align: center;
+  height: 373px;
+  display: flex;
+  padding-left: 10px;
+  flex-shrink: 0;
+  padding-right: 10px;
+  flex-direction: column;
+
+  background: linear-gradient(#66371d, #66371d) padding-box,
+    radial-gradient(#f0e3d0, #66371d) border-box;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  .picture {
+    background: linear-gradient(#66371d, #66371d) padding-box,
+      radial-gradient(#f0e3d0, #66371d) border-box;
+    border-radius: 90em;
+    border: 2px solid transparent;
+  }
+}
+.card-light {
+  width: 342px;
+  text-align: center;
+  height: 373px;
+  display: flex;
+  padding-left: 10px;
+  flex-shrink: 0;
+  padding-right: 10px;
+  flex-direction: column;
+
+  background: linear-gradient(#e0a872, #e0a872) padding-box,
+    radial-gradient(#f0e3d0, #66371d) border-box;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  .picture {
+    background: linear-gradient(#e0a872, #e0a872) padding-box,
+      radial-gradient(#f0e3d0, #e0a872) border-box;
+    border-radius: 90em;
+    border: 2px solid transparent;
+  }
+}
+.card-green {
+  width: 342px;
+  text-align: center;
+  height: 373px;
+  display: flex;
+  padding-left: 10px;
+  flex-shrink: 0;
+  padding-right: 10px;
+  flex-direction: column;
+
+  background: linear-gradient(#1d662d, #1d662d) padding-box,
+    radial-gradient(#f0e3d0, #1d662d) border-box;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  .picture {
+    background: linear-gradient(#1d662d, #1d662d) padding-box,
+      radial-gradient(#f0e3d0, #1d662d) border-box;
+    border-radius: 90em;
+    border: 2px solid transparent;
+  }
+}
+.card-purple {
+  width: 342px;
+  text-align: center;
+  height: 373px;
+  display: flex;
+  padding-left: 10px;
+  flex-shrink: 0;
+  padding-right: 10px;
+  flex-direction: column;
+
+  background: linear-gradient(#4a1d66, #4a1d66) padding-box,
+    radial-gradient(#f0e3d0, #4a1d66) border-box;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  .picture {
+    background: linear-gradient(#4a1d66, #4a1d66) padding-box,
+      radial-gradient(#f0e3d0, #4a1d66) border-box;
+    border-radius: 90em;
+    border: 2px solid transparent;
+  }
+}
+.card-red {
+  width: 342px;
+  text-align: center;
+  height: 373px;
+  display: flex;
+  padding-left: 10px;
+  flex-shrink: 0;
+  padding-right: 10px;
+  flex-direction: column;
+
+  background: linear-gradient(#661d1d, #661d1d) padding-box,
+    radial-gradient(#f0e3d0, #661d1d) border-box;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  .picture {
+    background: linear-gradient(#661d1d, #661d1d) padding-box,
+      radial-gradient(#f0e3d0, #661d1d) border-box;
+    border-radius: 90em;
+    border: 2px solid transparent;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.name {
+  margin: 0;
+}
+.who {
+  margin: 0;
+  margin-top: 10px;
+}
+img {
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 60px;
+}
+#cards {
+  display: flex;
+  gap: 10px;
+  overflow-x: scroll;
+  flex-direction: row;
+  width: 1118px;
+  margin: 0 auto;
+  padding-bottom: 4px;
+}
+.review,
+.name,
+.who {
+  color: #f0e3d0;
+  font-size: 16;
+  font-family: "Montserrat", sans-serif;
+}
+#rate {
+  display: flex;
+  margin: auto 0;
+}
+#rate label {
+  margin: auto 0;
+}
+/* Bence Mohr */
+
+/* Making a new form tab*/
+
+h2 {
+  text-align: center;
+  padding-top: 100px;
+  font-family: "Montserrat_Alternates";
+  color: var(--cream);
+}
+
+form {
+  display: grid;
+}
+
+#form {
+  margin: auto;
+  padding-bottom: 5vh;
+}
+
+/* Introducing text area for easier display */
+
+input,
+textarea {
+  padding-top: 0.5vh;
+  padding-bottom: 0.5vh;
+  margin-top: 2vh;
+  padding-left: 0.5vw;
+}
+
+/*
+Limiting textarea resize options only to vertical and with min height
+Maybe subject to change
+*/
+
+textarea {
+  resize: vertical;
+  min-height: 15vh;
+}
+
+/* Error message styling*/
+
+#error-msg {
+  background-color: lightsalmon;
+  color: tomato;
+  text-align: center;
+  border-radius: 5px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+#submit_but{
+    margin: 0;
+}
+
+
+/* star rating*/
+.star-rating {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+  margin: auto;
+}
+.star-rating input[type="radio"] {
+  opacity: 0; 
+  position: absolute; 
+}
+/* gender */
+.gender-selection{
+    margin: 0 auto;
+    color: var(--cream);
+    input{
+        margin: 5px 3px;
+    }
+}
+
+.star-rating label {
+
+  font-size: 2rem;
+  cursor: pointer;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: url("../src/img/review/star-zero.svg") no-repeat center; 
+  background-size: contain;
+}
+
+.star-rating input:checked ~ label,
+.star-rating label:hover,
+.star-rating input:hover ~ label {
+  background: url("../src/img/review/star-full.svg") no-repeat center; 
+  background-size: contain;
+}
