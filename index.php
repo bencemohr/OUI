@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./styles/index.css" type="text/css">
     <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="./styles/nav_bar.css">
   </head>
   <body>
     <div class="containter-2">
@@ -28,29 +29,11 @@
     </div>   
     <main>
       
+    <?php
+        $current_page = 'index'; //name of your page
+        include './src/nav.php';
+    ?>
       
-      <header>
-      <div class="logo">
-        <a href="file:///C:/University/Web%20Development/NHL_Stenden_PHP_Docker_Env-0.4/app/public/Oui/OUI/index.html#" target="_self"><img src="src/img/general/logo.svg"></a>
-      </div>
-        <nav>
-          
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Welcome</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Our story</a></li>
-            <li><a href="#">Review</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-
-        </nav>
-
-        <div class="social-media">
-          <a href="#"><img src="src/img/general/facebook.svg"></a>
-          <a href="#"><img src="src/img/general/instagram.svg"></a>
-        </div>
-      </header>
       <hr>
       <div class="container">
 

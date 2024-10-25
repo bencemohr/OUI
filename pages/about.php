@@ -6,9 +6,16 @@
     <title>About page</title>
     <link rel="stylesheet" href="../styles/general.css" type="text/css">
     <link rel="stylesheet" href="../styles/philosophy.css" type="text/css">
+    <link rel="stylesheet" href="../styles/scroll_bar.css" type="text/css">
+    <link rel="stylesheet" href="../styles/nav_bar.css" type="text/css">
+
     
 </head>
 <body>
+    <?php
+            $current_page = 'about'; //name of your page
+            include '../src/nav.php'; 
+    ?>
     <main>
         <div class="container">
             <div class="text">

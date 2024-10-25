@@ -117,11 +117,11 @@ class Card
     <meta name="author" content="Team IT1F">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OUI</title>
+    <link rel="stylesheet" href="../styles/nav_bar.css" type="text/css">
     <link rel="icon" type="image/x-icon" href="../src/img/general/logo.svg">
     <link rel="stylesheet" href="../styles/normalise.css" type="text/css">
     <link rel="stylesheet" href="../styles/general.css" type="text/css">
     <link rel="stylesheet" href="../styles/review.css" type="text/css">
-    <link rel="stylesheet" href="../styles/nav_bar.css" type="text/css">
     <link rel="stylesheet" href="../styles/scroll_bar.css" type="text/css">
 </head>
 

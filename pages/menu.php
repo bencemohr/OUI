@@ -7,29 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
     <link rel="stylesheet" href="../styles/menu-drinks.css" type="text/css">
+    <link rel="stylesheet" href="../styles/nav_bar.css" type="text/css">
+    <link rel="stylesheet" href="../styles/general.css" type="text/css">
 </head>
 <body>
+    <?php
+        $current_page = 'menu'; //name of your page
+        include '../src/nav.php';
+    ?>
     <main>
         <div class="container-drinks">
-            <header>
-                <img src="../src/img/general/logo.svg" alt="logo">
-                    <nav>
-                        <ul>
-                            <?php
-                                $menuNav= array("HOME","WELCOME","MENU","OUR STORY","REVIEW","CONTACT");
-                                $link= array("","","","","","");
-                                for ($i=0; $i < count($menuNav); $i++) {
-                                    echo "<li><a href='".$link[$i]."'>".$menuNav[$i]."</a></li>";
-                                }
-                            ?>
-                        </ul>
-                    </nav>
-                    <div class="socialMedia">
-                        <img src="../src/img/general/facebook.svg" alt="facebook">
-                        <img src="../src/img/general/instagram.svg" alt="instagram">
-                </div>
-                </header>
-                
                 <div class="menu">
                     <h1>MENU</h1>
                 </div>
@@ -42,9 +29,9 @@
                     </div>
                     <div class="coffeeItem">
                         <?php
+                            $i=2;
                             $coffeeFile= fopen("../src/menu-coffee.txt","r");
                             while ($i != feof($coffeeFile)) {
-
                                 $coffeeLine = fgets($coffeeFile);
                                 if($i % 2 != 0)
                                 {
