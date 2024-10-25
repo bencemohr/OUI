@@ -1,108 +1,149 @@
-@font-face {
+*
+{
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face 
+{
+    font-family: "Montserrat_Alternates";
+    src: url(./src/fonts/Montserrat_Alternates/MontserratAlternates-Regular.ttf);
+    font-family: "Montserrat_Alternates_Bold";
+    src: url(./src/fonts/Montserrat_Alternates/MontserratAlternates-Bold.ttf);
     font-family: "Montserrat";
     src: url(./src/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
 }
-@font-face {
-    font-family: "Montserrat_Alternates";
-    src: url(./src/fonts/Montserrat_Alternates/MontserratAlternates-Regular.ttf);
-}
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-size: 16px;
-    
-}
-
-body{
+body {
     background-color: #2E3138;
-    font-family: "Montserrat";
+    background-image: url(src/img/general/Group39471.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 950px;
+}
+
+main {
+    overflow-x: hidden;
+    background-image: url(src/img/general/Vector66.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    min-width: 120vw;
+    min-height: 130vh;
+}
+
+.container1 {
+    grid-area: 2/3/3/3;
+    position: absolute;
+    bottom: -9rem;       
+    right: 10%;        
+    width: 250px;      
+    height: 250px;
+}
+
+.container2 {
+    grid-area: 3/2/4/2;
+    position: fixed;
+    bottom: -6rem;    
+    right: 26%;
+    padding: 20px;  
+    max-width: 350px;
+    color: #EFD9C1;
+    text-align: left;
+    position: absolute;
+}
+
+.container3 {
+    grid-area: 3/1/3/2;
+    padding: 16%;
+    margin-right: 10%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    color: #333;
+    text-align: center;
+    overflow: hidden; 
+    position: relative;
+}
+
+.container2 h2 {
+    font-family: "Montserrat_Alternates_Bold", sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
     color: #EFD9C1;
 }
 
-header{
+.container2 p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    color: #EFD9C1;
+    line-height: 1.5;
+}
+
+
+.logo {
+   display: flex;
+   float: left;
+   padding-left: 4%;
+   padding-top: 1%;
+   
+}
+
+.social-media {
     display: flex;
-    background-color: #EFD9C1;
-    width: 100%;
-    height: 10vh;
+    justify-content: right;
+    column-gap: 0.5rem;
+   
+}
+
+li {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(220, 220, 220);
+    text-decoration: none;
+    column-gap: 1rem;
+}
+
+header {
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2.5rem;
+    padding: 5px 2rem;
+    
 }
 
-header nav ul{
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
+nav {
+    max-width: 100%;
 }
 
+nav li {
+   list-style: none;
+}
 
-header nav ul li a{
+nav li {
+    display: inline-block;
+    padding: 0px 20px;
+   
+}
+
+nav li a {
+    transition: all 0.3s ease 0s;
+    color: #4a4e58;
     text-decoration: none;
-    color: #2E3138;
 }
 
-a:hover{
+nav li a:hover {
+    color: #303238;
     text-decoration: underline;
-    text-decoration-color: #2E3138;
 }
 
-.menu{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height:90vh;
-    background-image: url(./src/img/general/Rectangle\ 1.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top !important;
-}
-
-h1{ 
-    font-family: "Montserrat_Alternates";
-    font-size: 50px;
-}
-
-h2{
-    display: flex;
-    font-size: 25px;
-    height: 2rem;
-    justify-content: center;
-    align-items: center;
-}
-
-
-p{
-    margin-top: 1.5rem;
-}
-
-.drinks{
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    grid-template-rows: 10% 90%;
-    grid-template-columns: 1fr 1fr;;
-    row-gap: 2rem;
-    padding: 2.5rem;
-    line-height: 2;
-}
-
-.drinks h1{
-    grid-area: 1/1/2/3;
-    text-align: center;
-
-}
-.icon{
-    display:flex;
-    gap: 10px;
-    justify-content: center;
-    margin-top: 1rem;
-}
-
-.coffeeItem, .cdrinkItem{
-    display: flex;
-    flex-direction: column;
-    padding: 2.5rem 2.5rem;
+hr {
+    border: 1px solid rgb(231, 228, 228);
 }

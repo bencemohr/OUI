@@ -1,0 +1,46 @@
+#welcomeimg
+{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    float: right;
+    width: auto;
+    margin-left: -1111vw;
+}
+
+body
+{
+    width: 100vw;
+    background-color: #2E3138;
+    overflow-x: hidden;
+}
+
+p
+{
+    font-size: 20;
+    font-family: "Montserrat";
+}
+
+.approach
+{
+    float: left;
+    display: flex;
+    flex-direction: column;
+    width: 34vw;
+    margin-top: 25vh;
+    background-color: #7C573C;
+    border-radius: 30%;
+    padding: 66px;
+    padding-right: 50vw;
+    line-height: 30px;
+    color: #EFD9C1;
+    font-family: "Montserrat";
+    font-size: 18px;
+}
+
+.approach > h2
+{
+    font-family: "Cinzel_Decorative";
+    padding-bottom: 11px;
+    font-size: 30px;
+}
