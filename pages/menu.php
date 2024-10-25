@@ -43,9 +43,19 @@
                     <div class="coffeeItem">
                         <?php
                             $coffeeFile= fopen("../src/menu-coffee.txt","r");
-                            while (! feof($coffeeFile)) {
+                            while ($i != feof($coffeeFile)) {
+
                                 $coffeeLine = fgets($coffeeFile);
-                                echo "<p>" . $coffeeLine . "</p>";
+                                if($i % 2 != 0)
+                                {
+                                    echo "<p>" . $coffeeLine . "</p>";
+                                    $i+=1;
+                                }
+                                else
+                                {
+                                    echo "<b><p>" . $coffeeLine . "</p></b>";
+                                    $i+=1;
+                                }
                             }
                             fclose($coffeeFile);
                         
@@ -60,9 +70,18 @@
                     <div class="cdrinkItem">
                         <?php
                             $cdrinkFile= fopen("../src/menu-cdrink.txt","r");
-                            while (! feof($cdrinkFile)) {
+                            while ($i != feof($cdrinkFile)) {
                                 $cdrinkLine = fgets($cdrinkFile);
-                                echo "<p>" . $cdrinkLine . "</p>";
+                                if($i % 2 != 0)
+                                {  
+                                    echo "<p>" . $cdrinkLine . "</p>";
+                                    $i+=1;
+                                }
+                                else
+                                {
+                                    echo "<b><p>" . $cdrinkLine . "</p></b>";
+                                    $i+=1;
+                                }
                             }
                             fclose($cdrinkFile);
                         ?>
