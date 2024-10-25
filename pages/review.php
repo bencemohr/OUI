@@ -116,14 +116,30 @@ class Card
     <meta name="author" content="Team IT1F">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OUI</title>
+    <link rel="icon" type="image/x-icon" href="../src/img/general/logo.svg">
     <link rel="stylesheet" href="../styles/normalise.css" type="text/css">
     <link rel="stylesheet" href="../styles/general.css" type="text/css">
     <link rel="stylesheet" href="../styles/review.css" type="text/css">
+    <link rel="stylesheet" href="../styles/nav_bar.css" type="text/css">
 </head>
 
 <body>
     <main>
-        <nav></nav>
+        <nav>
+            <a href="../index.php"><img src="../src/img/general/logo.svg" alt="logo" id="logo"></a>
+            <ul>
+                <li><a href="home.php">HOME</a></li>
+                <li><a href="welcome.php">WELCOME</a></li>
+                <li><a href="menu.php">MENU</a></li>
+                <li><a href="about.php">OUR HISTORY</a></li> 
+                <li><a href="review.php" id="now">REVIEW</a></li> <!-- use id now on your page -->
+                <li><a href="contact.php">CONTACT</a></li>
+            </ul>
+            <div id="social">
+                <a href="https://www.facebook.com/"><img src="../src/img/general/facebook.svg" alt="facebook"></a>
+                <a href="https://www.instagram.com/"><img src="../src/img/general/instagram.svg" alt="instagram"></a>
+            </div>
+        </nav>
         <h1>Customer Reviews</h1>
         <section id="cards">
             <?php
