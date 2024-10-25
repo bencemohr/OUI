@@ -68,19 +68,20 @@ class Card
         echo "
             <div class='$this->color'>
             <img src=";
-            $this->get_gender_picture();
-            echo " alt='$this->name' class='picture'>
+        $this->get_gender_picture();
+        echo " alt='$this->name' class='picture'>
             <p class='name'>$this->name</p>
             <p class='who'>$this->occ</p>
             <div class='stars'>
         ";
-           $this->get_stars();
+        $this->get_stars();
         echo "
             </div>
             <p class='review'>$this->msg</p></div>
         ";
     }
-    function get_gender_picture(){
+    function get_gender_picture()
+    {
         echo $this->pictures_url[$this->gender];
     }
     function get_stars()
@@ -124,22 +125,13 @@ class Card
 </head>
 
 <body>
+
     <main>
-        <nav>
-            <a href="../index.php"><img src="../src/img/general/logo.svg" alt="logo" id="logo"></a>
-            <ul>
-                <li><a href="home.php">HOME</a></li>
-                <li><a href="welcome.php">WELCOME</a></li>
-                <li><a href="menu.php">MENU</a></li>
-                <li><a href="about.php">OUR HISTORY</a></li> 
-                <li><a href="review.php" id="now">REVIEW</a></li> <!-- use id now on your page -->
-                <li><a href="contact.php">CONTACT</a></li>
-            </ul>
-            <div id="social">
-                <a href="https://www.facebook.com/"><img src="../src/img/general/facebook.svg" alt="facebook"></a>
-                <a href="https://www.instagram.com/"><img src="../src/img/general/instagram.svg" alt="instagram"></a>
-            </div>
-        </nav>
+        <?php
+        
+        $current_page = 'review'; //name of your page
+        include '../src/nav.php'; ?>
+
         <h1>Customer Reviews</h1>
         <section id="cards">
             <?php
@@ -157,8 +149,8 @@ class Card
             $gender = $line[4];
             new Card($colors[$i], $name, $occ, $msg, $stars, $gender);
             $i++;
-        
-            
+
+
             fclose($file);
             ?>
         </section>
@@ -173,7 +165,7 @@ class Card
                 <div class="star-rating">
                     <input type="radio" id="star5" name="rating" value="5" />
                     <label for="star5" title="5"></label>
-                    
+
                     <input type="radio" id="star4" name="rating" value="4" />
                     <label for="star4" title="4"></label>
 
