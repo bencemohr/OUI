@@ -13,7 +13,7 @@
             <ul>
                 <?php
                     $menuNav= array("HOME","WELCOME","MENU","OUR STORY","REVIEW","CONTACT");
-                    $link= array("","","","","","");
+                    $link= array("home.php","welcome.php","menu.php","about.php","review.php","contact.php");
                     for ($i=0; $i < count($menuNav); $i++) {
                         echo "<li><a href='".$link[$i]."'>".$menuNav[$i]."</a></li>";
                     }
