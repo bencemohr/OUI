@@ -6,6 +6,45 @@
     <title>About page</title>
     <link rel="stylesheet" href="../styles/general.css" type="text/css">
     <link rel="stylesheet" href="../styles/philosophy.css" type="text/css">
+    <link rel="stylesheet" href="../styles/scroll_bar.css" type="text/css">
+    <link rel="stylesheet" href="../styles/nav_bar.css" type="text/css">
+
+    
+</head>
+<body>
+    <?php
+            $current_page = 'about'; //name of your page
+            include '../src/nav.php'; 
+    ?>
+    <main>
+        <div class="container">
+            <div class="text">
+                <h2><b>Our Philosophy</b></h2>
+                    <p>
+                        Coffee was introduced to paris in 1644 by 
+                        Pasqua Rosee, who opened the first cafe in 
+                        Paris on place saint-Germain, but the concept
+                        did not become successful until the opening of 
+                        Cafe Procopr in about 1689 in rue des Fosses-
+                        Saint-Germain, close to the Comedie-Francaise.
+                    </p>
+            </div>
+            <div class="image">
+               <img src="../src/img/building.jpg" alt="building">
+            </div>
+      
+    </div>
+    </main>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About page</title>
+    <link rel="stylesheet" href="../styles/general.css" type="text/css">
+    <link rel="stylesheet" href="../styles/philosophy.css" type="text/css">
     
 </head>
 <body>

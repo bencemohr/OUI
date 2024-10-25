@@ -11,6 +11,11 @@
 body
 {
     width: 100vw;
+    overflow-x: hidden;
+}
+
+.main
+{
     background-color: #2E3138;
     overflow-x: hidden;
 }
@@ -43,4 +48,15 @@ p
     font-family: "Cinzel_Decorative";
     padding-bottom: 11px;
     font-size: 30px;
+}
+
+#social
+{
+    display: flex;
+    align-items: center;
+}
+
+#social img
+{
+    width: 50%;
 }

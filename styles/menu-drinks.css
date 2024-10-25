@@ -21,32 +21,7 @@ body{
     color: #EFD9C1;
 }
 
-header{
-    display: flex;
-    background-color: #EFD9C1;
-    width: 100%;
-    height: 10vh;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2.5rem;
-}
 
-header nav ul{
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-}
-
-
-header nav ul li a{
-    text-decoration: none;
-    color: #2E3138;
-}
-
-a:hover{
-    text-decoration: underline;
-    text-decoration-color: #2E3138;
-}
 
 .menu{
     display: flex;

@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../styles/general.css" type="text/css">
     <link rel="stylesheet" href="../styles/normalise.css" type="text/css">
     <link rel="stylesheet" href="../styles/welcome.css" type="text/css">
+    <link rel="stylesheet" href="../styles/nav_bar.css" type="text/css">
+
     <!--
     Author: Bence Mohr
     Date: 2024. Oct. 23.
@@ -14,6 +16,11 @@
     -->
 </head>
 <body>
+    <?php
+        $current_page = 'welcome'; //name of your page
+        include '../src/nav.php'; 
+    ?>
+
     <div class="main">
         <div class="approach">
             <h2>Our Approach</h2>

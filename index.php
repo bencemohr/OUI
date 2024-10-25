@@ -1,39 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Team IT1F">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OUI</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OUI Caffé</title>
+    <link rel="stylesheet" href="styles/index.css" type="text/css">
     <link rel="stylesheet" href="style.css" type="text/css">
-</head>
-<body>
-   
-    <main>
-      
-      
-      <header>
-      <div class="logo">
-        <a href="file:///C:/University/Web%20Development/NHL_Stenden_PHP_Docker_Env-0.4/app/public/Oui/OUI/index.html#" target="_self"><img src="src/img/general/logo.svg"></a>
+    <link rel="stylesheet" href="styles/nav_bar.css" type="text/css">
+    <link rel="stylesheet" href="styles/general.css" type="text/css">
+  </head>
+  <body>
+    <div class="containter-2">
+      <div class="Text">
+        <h2>Start your <?php echo date("l"); ?> with a cup<Br>
+        of coffee at OUI</h2>
       </div>
-        <nav>
-          
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Welcome</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Our story</a></li>
-            <li><a href="#">Review</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-
-        </nav>
-
-        <div class="social-media">
-          <a href="#"><img src="src/img/general/facebook.svg"></a>
-          <a href="#"><img src="src/img/general/instagram.svg"></a>
-        </div>
-      </header>
+      <div class="TextParagraph">
+        <p>
+          Whether the weather is warm or <br />
+          cold you can enjoy the coffee in hot <br />
+          and cold brew.
+        </p>
+      </div>
+      
+      <div class="button-container">
+          <a href="#" class="menu-button">MENU</a>
+      </div>
+    </div>   
+    <main>
+    <nav>
+      <a href='../index.php'><img src='src/img/general/logo.svg' alt='logo' id='logo'></a>
+      <ul>
+        <li><a href='index.php'>HOME</a></li>
+        <li><a href='pages/welcome.php'>WELCOME</a></li>
+        <li><a href='pages/menu.php'>MENU</a></li>
+        <li><a href='pages/about.php'>OUR HISTORY</a></li> 
+        <li><a href='pages/review.php'>REVIEW</a></li> 
+        <li><a href='pages/contact.php'>CONTACT</a></li>
+      </ul>
+      <div id='social'>
+        <a href='https://www.facebook.com/'><img src='src/img/general/facebook.svg' alt='facebook'></a>
+        <a href='https://www.instagram.com/'><img src='src/img/general/instagram.svg' alt='instagram'></a>
+      </div>
+    </nav>      
       <hr>
       <div class="container">
 
