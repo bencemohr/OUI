@@ -1,46 +1,47 @@
-* 
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body
 {
-    overflow: hidden;
-    background-color: var(--background-color);
+    background-color: #2E3138;
+    margin: 0;
+    padding: 0;
 }
 
-h1
+main
 {
-    color: var(--cream);
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    padding-top: 100px;
+}
+
+h2
+{
+    padding-left: 0%;
+    text-align: center;
 }
 
 .text
 {
-    font-family: 'Montserrat_Alternates';
-    color: var(--cream);
-}
-
-.container
-{
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 20px;
-max-width: 900px;
-margin: 50px auto;
-border-radius: 10px;
+    color: #EFD9C1;
+    grid-column: 1;
+    font-size: 25px;
 }
 
 img
 {
-    width: 250px;
+    grid-column: 2;
+    width: 320px;
+    padding-top: 10px;
+    
 }
 
-.button
+.container
 {
-    width: fit-content;
-    background-color: var(--cream);
-    float: right;
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    gap: .5rem;
+    align-content: center;
+    grid-column: 2/3;
+    align-self: center;
+    padding-left: 75px;
 }
+
+
