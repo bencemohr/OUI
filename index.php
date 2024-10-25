@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./styles/index.css" type="text/css">
+    <title>OUI Caffé</title>
+    <link rel="stylesheet" href="styles/index.css" type="text/css">
     <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="stylesheet" href="./styles/nav_bar.css">
+    <link rel="stylesheet" href="styles/nav_bar.css" type="text/css">
+    <link rel="stylesheet" href="styles/general.css" type="text/css">
   </head>
   <body>
     <div class="containter-2">
@@ -24,16 +25,24 @@
       
       <div class="button-container">
           <a href="#" class="menu-button">MENU</a>
-          
       </div>
     </div>   
     <main>
-      
-    <?php
-        $current_page = 'index'; //name of your page
-        include './src/nav.php';
-    ?>
-      
+    <nav>
+      <a href='../index.php'><img src='src/img/general/logo.svg' alt='logo' id='logo'></a>
+      <ul>
+        <li><a href='index.php'>HOME</a></li>
+        <li><a href='pages/welcome.php'>WELCOME</a></li>
+        <li><a href='pages/menu.php'>MENU</a></li>
+        <li><a href='pages/about.php'>OUR HISTORY</a></li> 
+        <li><a href='pages/review.php'>REVIEW</a></li> 
+        <li><a href='pages/contact.php'>CONTACT</a></li>
+      </ul>
+      <div id='social'>
+        <a href='https://www.facebook.com/'><img src='src/img/general/facebook.svg' alt='facebook'></a>
+        <a href='https://www.instagram.com/'><img src='src/img/general/instagram.svg' alt='instagram'></a>
+      </div>
+    </nav>      
       <hr>
       <div class="container">
 
