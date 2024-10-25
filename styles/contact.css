@@ -1,0 +1,131 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url(../src/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat_Alternates";
+    src: url(../src/fonts/Montserrat_Alternates/MontserratAlternates-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat_Alternates_Bold";
+    src: url(../src/fonts/Montserrat_Alternates/MontserratAlternates-Bold.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Montserrat";
+    background-color: #EFD9C1;
+    
+}
+
+main{
+    background-color: #2E3138;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    line-height: 2rem;
+    color: #EFD9C1;
+    padding: 6rem 6rem 1rem 6rem;
+}
+
+header{
+    display: flex;
+    background-color: #EFD9C1;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2.5rem;
+}
+
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+
+header nav ul li a{
+    text-decoration: none;
+    color: #2E3138;
+}
+
+header nav ul li{
+    list-style: none;
+}
+
+a:hover{
+    text-decoration: underline;
+    text-decoration-color: #2E3138;
+}
+
+.contact{
+    grid-column: 1/2;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    gap: 1rem;
+}
+
+textarea{
+    font-family: "Montserrat";
+    height: 50px;
+    resize: none;
+    border-radius: 18px;
+    padding: 10px;
+    background-color: #EFD9C1;
+    color: #2E3138;
+    
+}
+
+#button{
+    background-color: #EFD9C1;
+    color: #2E3138;
+    font-family: "Montserrat";
+    border-radius: 18px;
+}
+
+#mess{
+    height: 100px;
+}
+
+.map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+footer a{
+    text-decoration: none;
+    color: #60463B;
+}
+
+.footerRight{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.pageInfo, .social{
+    word-spacing: 10px;
+}
