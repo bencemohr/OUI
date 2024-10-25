@@ -1,0 +1,21 @@
+/* custom scrollbar */
+
+body::-webkit-scrollbar {
+    width: 11px;
+  }
+  #cards::-webkit-scrollbar {
+    height: 11px;
+  }
+  
+  body::-webkit-scrollbar-track,
+  #cards::-webkit-scrollbar-track {
+    background: var(--cream);
+    border-radius: 30px;
+  }
+  
+  body::-webkit-scrollbar-thumb,
+  #cards::-webkit-scrollbar-thumb {
+    background: var(--brown);
+    border-radius: 30px;
+  }
+  
