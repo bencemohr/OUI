@@ -10,12 +10,12 @@
 <body>
    
     <main>
+      
+      
+      <header>
       <div class="logo">
         <a href="file:///C:/University/Web%20Development/NHL_Stenden_PHP_Docker_Env-0.4/app/public/Oui/OUI/index.html#" target="_self"><img src="src/img/general/logo.svg"></a>
       </div>
-      
-      <header>
-        
         <nav>
           
           <ul>
