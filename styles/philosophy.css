@@ -7,7 +7,6 @@
 
 body
 {
-    overflow-x: hidden;
     background-color: var(--background-color);
 }
 
@@ -38,6 +37,8 @@ gap: 10rem;
 
 .philoImage img{
     border-radius: 2%;
+    width: 400px;
+    height: 600px;
 }
 
 .images img
@@ -72,7 +73,7 @@ gap: 10rem;
 .images {
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
     padding: 0 10%;
     gap: 2%;
 }

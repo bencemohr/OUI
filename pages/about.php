@@ -29,57 +29,6 @@
                         Saint-Germain, close to the Comedie-Francaise.
                     </p>
             </div>
-            <div class="image">
-               <img src="../src/img/building.jpg" alt="building">
-            </div>
-      
-    </div>
-    </main>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About page</title>
-    <link rel="stylesheet" href="../styles/general.css" type="text/css">
-    <link rel="stylesheet" href="../styles/philosophy.css" type="text/css">
-    
-</head>
-<body>
-    <header>
-        <img src="../src/img/general/logo.svg" alt="logo">
-            <nav>
-                <ul>
-                    <?php
-                        $menuNav= array("HOME","WELCOME","MENU","OUR STORY","REVIEW","CONTACT");
-                        $link= array("","","","","","");
-                        for ($i=0; $i < count($menuNav); $i++) {
-                            echo "<li><a href='".$link[$i]."'>".$menuNav[$i]."</a></li>";
-                        }
-                    ?>
-                </ul>
-            </nav>
-            <div class="socialMedia">
-                <img src="../src/img/general/facebook.svg" alt="facebook">
-                <img src="../src/img/general/instagram.svg" alt="instagram">
-        </div>
-    </header>
-
-    <main>
-        <div class="container">
-            <div class="text">
-                <h2><b>Our Philosophy</b></h2>
-                    <p>
-                        Coffee was introduced to paris in 1644 by 
-                        Pasqua Rosee, who opened the first cafe in 
-                        Paris on place saint-Germain, but the concept
-                        did not become successful until the opening of 
-                        Cafe Procopr in about 1689 in rue des Fosses-
-                        Saint-Germain, close to the Comedie-Francaise.
-                    </p>
-            </div>
             <div class="philoImage">
                <img src="../src/img/building.jpg" alt="building">
             </div>
