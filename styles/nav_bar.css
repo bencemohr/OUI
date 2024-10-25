@@ -34,7 +34,7 @@ nav{
 #now::before{
     background-image: url('../src/img/general/pager.svg');
     content: '';
-    background-position: center -4px;
+    background-position: center -11px;
     background-repeat: repeat-y;
     position: absolute;
     top: -100vh; 
