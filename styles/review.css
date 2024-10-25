@@ -4,11 +4,7 @@ body {
   background-size: cover;
   overflow-x: hidden;
 }
-nav {
-  width: 100%;
-  height: 92px;
-  background-color: var(--cream);
-}
+
 h1 {
   text-align: center;
   padding-top: 100px;
