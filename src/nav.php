@@ -25,7 +25,7 @@ echo ">OUR HISTORY</a></li>
     if ($current_page == 'review'){
         echo "id='now'";
     }
-echo ">REVIEW</a></li> <!-- use id now on your page -->
+echo ">REVIEW</a></li> 
         <li><a href='contact.php'";
     if ($current_page == 'contact'){
         echo "id='now'";

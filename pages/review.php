@@ -122,6 +122,7 @@ class Card
     <link rel="stylesheet" href="../styles/general.css" type="text/css">
     <link rel="stylesheet" href="../styles/review.css" type="text/css">
     <link rel="stylesheet" href="../styles/nav_bar.css" type="text/css">
+    <link rel="stylesheet" href="../styles/scroll_bar.css" type="text/css">
 </head>
 
 <body>
