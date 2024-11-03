@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to OUI</title>
+    <link rel="icon" type="image/x-icon" href="../src/img/general/logo.svg">
     <link rel="stylesheet" href="../styles/general.css" type="text/css">
     <link rel="stylesheet" href="../styles/normalise.css" type="text/css">
     <link rel="stylesheet" href="../styles/welcome.css" type="text/css">
-    <link rel="stylesheet" href="../styles/nav_bar.css" type="text/css">
     <link rel="stylesheet" href="../styles/footer.css" type="text/css">
+    <link rel="stylesheet" href="../styles/nav_bar.css" type="text/css">
+    <link rel="stylesheet" href="../styles/scroll_bar.css" type="text/css">
 
     <!--
     Author: Bence Mohr
@@ -51,11 +53,22 @@
                 <a href="">Contact</a>
                 </div>
             <div class="social">
-                <img src="../src/img/contact/Facebook.svg" alt="facebook">
-                <img src="../src/img/contact/Twitter.svg" alt="twitter">
-                <img src="../src/img/contact/Instagram.svg" alt="instagram">
-                <img src="../src/img/contact/LinkedIn.svg" alt="linkedin">
-                <img src="../src/img/contact/YouTube.svg" alt="youtube">
+            <a href="https://www.facebook.com/">
+                    <img src="../src/img/contact/Facebook.svg" alt="facebook">
+                </a>
+                <a href="https://x.com/">
+                    <img src="../src/img/contact/Twitter.svg" alt="twitter">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img src="../src/img/contact/Instagram.svg" alt="instagram">
+                </a>
+                <a href="https://www.linkedin.com/">
+                    <img src="../src/img/contact/LinkedIn.svg" alt="linkedin">
+                </a>
+                <a href="https://www.youtube.com/">
+                    <img src="../src/img/contact/YouTube.svg" alt="youtube">
+                </a>
+
             </div>
         </div>
     </footer>

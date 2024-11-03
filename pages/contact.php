@@ -4,27 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link rel="icon" type="image/x-icon" href="../src/img/general/logo.svg">
+    <link rel="stylesheet" href="../styles/general.css" type="text/css">
     <link rel="stylesheet" href="../styles/contact.css" type="text/css">
+    <link rel="stylesheet" href="../styles/nav_bar.css" type="text/css">
+    <link rel="stylesheet" href="../styles/scroll_bar.css" type="text/css">
 </head>
 <body>
-    <header>
-        <img src="../src/img/general/logo.svg" alt="logo">
-        <nav>
-            <ul>
-                <?php
-                    $menuNav= array("HOME","WELCOME","MENU","OUR STORY","REVIEW","CONTACT");
-                    $link= array("home.php","welcome.php","menu.php","about.php","review.php","contact.php");
-                    for ($i=0; $i < count($menuNav); $i++) {
-                        echo "<li><a href='".$link[$i]."'>".$menuNav[$i]."</a></li>";
-                    }
-                ?>
-            </ul>
-        </nav>
-        <div class="socialMedia">
-            <img src="../src/img/general/facebook.svg" alt="facebook">
-            <img src="../src/img/general/instagram.svg" alt="instagram">
-        </div>
-    </header>
+<?php
+        
+        $current_page = 'contact'; //name of your page
+        include '../src/nav.php'; ?>
     <main>
         <div class="contact">
             <h1>Want to contact us?</h1>
@@ -60,11 +50,22 @@
                 <a href="">Contact</a>
                 </div>
             <div class="social">
-                <img src="../src/img/contact/Facebook.svg" alt="facebook">
-                <img src="../src/img/contact/Twitter.svg" alt="twitter">
-                <img src="../src/img/contact/Instagram.svg" alt="instagram">
-                <img src="../src/img/contact/LinkedIn.svg" alt="linkedin">
-                <img src="../src/img/contact/YouTube.svg" alt="youtube">
+            <a href="https://www.facebook.com/">
+                    <img src="../src/img/contact/Facebook.svg" alt="facebook">
+                </a>
+                <a href="https://x.com/">
+                    <img src="../src/img/contact/Twitter.svg" alt="twitter">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img src="../src/img/contact/Instagram.svg" alt="instagram">
+                </a>
+                <a href="https://www.linkedin.com/">
+                    <img src="../src/img/contact/LinkedIn.svg" alt="linkedin">
+                </a>
+                <a href="https://www.youtube.com/">
+                    <img src="../src/img/contact/YouTube.svg" alt="youtube">
+                </a>
+
             </div>
         </div>
     </footer>

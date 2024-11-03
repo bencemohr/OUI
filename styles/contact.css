@@ -35,34 +35,6 @@ main{
     padding: 6rem 6rem 1rem 6rem;
 }
 
-header{
-    display: flex;
-    background-color: #EFD9C1;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2.5rem;
-}
-
-header nav ul{
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-}
-
-
-header nav ul li a{
-    text-decoration: none;
-    color: #2E3138;
-}
-
-header nav ul li{
-    list-style: none;
-}
-
-a:hover{
-    text-decoration: underline;
-    text-decoration-color: #2E3138;
-}
 
 .contact{
     grid-column: 1/2;

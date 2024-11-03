@@ -6,6 +6,10 @@ footer{
     padding: 0.5rem 0;
     background-color: #EFD9C1;
     color: black;
+    img{
+        min-width: 0%;
+        opacity: 1;
+    }
 }
 
 footer a{

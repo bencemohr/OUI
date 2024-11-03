@@ -1,4 +1,6 @@
 nav{
+    font-family: "Montserrat_Alternates";
+    color: var(--cream);
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -15,31 +17,36 @@ nav{
        color: var(--brown)
     }
     img{
+        box-sizing: content-box;
         margin: 0;
         height: 100%;
+        width: 60px;
+        opacity: 1;
+        min-width: 0%;
     }
-}
-#logo{
-    margin: 0;
-    padding-left: 20px;
-    height: 100%;
-}
-#social img{
-    padding-right: 40px;
-}
-#now {
-    position: relative; 
-    z-index: 1;
-}
-#now::before{
-    background-image: url('../src/img/general/pager.svg');
-    content: '';
-    background-position: center -11px;
-    background-repeat: repeat-y;
-    position: absolute;
-    top: -100vh; 
-    bottom: -37px; 
-    left: -50px; 
-    right: -50px; 
-    z-index: -1;
+    #logo{
+        margin: 0;
+        padding-left: 20px;
+        height: 100%;
+    }
+    #social img{
+        padding-right: 40px;
+        width: 60px;
+    }
+    #now {
+        position: relative; 
+        z-index: 1;
+    }
+    #now::before{
+        background-image: url('../src/img/general/pager.svg');
+        content: '';
+        background-position: bottom;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: -100vh; 
+        bottom: -37px; 
+        left: -50px; 
+        right: -50px; 
+        z-index: -1;
+    }
 }

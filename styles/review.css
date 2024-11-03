@@ -15,8 +15,13 @@ h1 {
 .stars {
   display: flex;
   margin: 0 auto;
-
   width: 50%;
+  img{
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 60px;
+  }
 }
 .card-brown {
   width: 342px;
@@ -136,7 +141,7 @@ main {
   margin: 0;
   margin-top: 10px;
 }
-img {
+.picture {
   margin: 0 auto;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -183,6 +188,12 @@ form {
 #form {
   margin: auto;
   padding-bottom: 5vh;
+  input{
+    background-color: var(--cream);
+  }
+  textarea {
+    background-color: var(--cream);
+  }
 }
 
 /* Introducing text area for easier display */

@@ -1,6 +1,41 @@
 <?php 
-echo "<nav>
-    <a href='../index.php'><img src='../src/img/general/logo.svg' alt='logo' id='logo'></a>
+echo "<nav>";
+if ($current_page == 'home'){
+    echo  "
+    <a href='index.php'>
+        <img src='src/img/general/logo.svg' alt='logo' id='logo'>
+    </a>
+    <ul>
+        <li>
+            <a href='pages/home.php'  id='now'>HOME</a>
+        </li>
+        <li>
+            <a href='pages/welcome.php'>WELCOME</a>
+        </li>
+        <li>
+            <a href='pages/menu.php'>MENU</a>
+        </li>
+        <li>
+            <a href='pages/about.php'>OUR HISTORY</a>
+        </li>
+        <li>
+            <a href='pages/review.php'>REVIEW</a>
+        </li>
+        <li>
+            <a href='pages/contact.php'>CONTACT</a>
+        </li>
+    </ul>
+    <div id='social'>
+        <a href='https://www.facebook.com/'>
+            <img src='src/img/general/facebook.svg' alt='facebook' id='faceb'>
+        </a>
+        <a href='https://www.instagram.com/'>
+            <img src='src/img/general/instagram.svg' alt='instagram' id='insta'>
+        </a>
+    </div>
+</nav>";
+}else{
+    echo "<a href='../index.php'><img src='../src/img/general/logo.svg' alt='logo' id='logo'></a>
     <ul><li><a href='home.php'";
     if ($current_page == 'home'){
         echo "id='now'";
@@ -33,8 +68,10 @@ echo ">REVIEW</a></li>
 echo ">CONTACT</a></li>
     </ul>
     <div id='social'>
-        <a href='https://www.facebook.com/'><img src='../src/img/general/facebook.svg' alt='facebook'></a>
-        <a href='https://www.instagram.com/'><img src='../src/img/general/instagram.svg' alt='instagram'></a>
+        <a href='https://www.facebook.com/'><img src='../src/img/general/facebook.svg' alt='facebook' id='faceb'></a>
+        <a href='https://www.instagram.com/'><img src='../src/img/general/instagram.svg' alt='instagram' if='insta'></a>
     </div>
 </nav>";
+}
+    
 ?>
